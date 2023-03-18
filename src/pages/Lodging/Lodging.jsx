@@ -18,7 +18,7 @@ function Lodging({apparts}) {
   } = appart || {};
 
   return appart ? (
-    <div className='lodging'>Lodging</div>
+    <div className='lodging'>{id}</div>
   ) : (
     <Navigate to='/error' replace={<NotFound />} />
   )
