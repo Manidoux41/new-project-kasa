@@ -5,13 +5,22 @@ import Lodging from "./pages/Lodging/Lodging";
 import NotFound from "./pages/NotFound/NotFound";
 import Layout from "./pages/Layout/Layout";
 import { useEffect, useState } from "react";
-import data from '../datas/appartements.json';
 
 function App() {
-  const [apparts, setAppart] = useState([])
+  const [apparts, setApparts] = useState([])
 
   useEffect(() => {
-   setAppart(data)
+    const fetchData = async () => {
+      try {
+        const response = await fetch('./datas/appartements.json')
+        const data = await(response.json())
+        setApparts(data)
+      } catch (error) {
+        console.log("Une erreur s'est produite");
+      }
+    }
+    setTimeout(fetchData, 0);
+    return () => {};
   }, [])
  
   return (
