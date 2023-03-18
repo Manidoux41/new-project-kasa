@@ -11,9 +11,12 @@ header {
     margin: 0 auto;
   }
   .logo {
-    width: 145px;
-    height: 47px;
-    overflow: hidden;
+    width: 125px;
+    height: 37px;@media screen and (min-width: 320px) {
+      width: 145px;
+      height: 47px;
+    }
+
     @media screen and (min-width: 768px) {
       width: 210px;
       height: 68px;
@@ -30,9 +33,13 @@ header {
         gap: 57px;
       }
       a {
-        font-size: 12px;
+        font-size: 10px;
         text-transform: uppercase;
         color: $mainColor;
+        @media screen and (min-width: 320px) {
+          font-size: 12px;
+          text-transform: none;
+        }
         @media screen and (min-width: 768px) {
           font-size: 24px;
           text-transform: none;
