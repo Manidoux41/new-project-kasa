@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .lodging {
     width: 100%;
     margin: 0 auto;
@@ -6,5 +8,13 @@
       max-width: 1240px;
       width: 100%;
       margin: 0 auto;
+    }
+    h3 {
+      color: $mainColor;
+      font-size: 18px;
+      font-weight: 500;
+      @media screen and (min-width:768px) {
+        font-size: 36px;
+      }
     }
   }

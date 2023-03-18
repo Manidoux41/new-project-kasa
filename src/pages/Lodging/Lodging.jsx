@@ -21,6 +21,9 @@ function Lodging({apparts}) {
   return appart ? (
     <div className='lodging'>
       <Carousel carouselPictures={pictures} />
+      <div className="ident">
+        <h3>{title}</h3>
+      </div>
     </div>
   ) : (
     <Navigate to='/error' replace={<NotFound />} />
