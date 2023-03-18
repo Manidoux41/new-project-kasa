@@ -8,12 +8,13 @@
   overflow: hidden;
   position: relative;
   @media screen and (min-width: 767px) {
-    width: 45%;
+    width: 48%;
+    height: 340px;
     border-radius: 10px;
   }
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 992px) {
     height: 340px;
-    width: 30%;
+    width: 340px;
   }
   .cardImg{
     width: 100%;
