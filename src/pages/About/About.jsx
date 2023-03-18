@@ -7,6 +7,7 @@ function About() {
   return (
     <div className="about">
       <Banner imageSrc={`./banner${imageIndex}.jpg`}/>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 }
