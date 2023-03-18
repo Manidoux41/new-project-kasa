@@ -13,7 +13,7 @@ function Home({apparts}) {
       <div className="cards">
        {
         apparts.map((appart) => (
-          <Card key={appart.id} appartTitle={appart.title} appartCover={appart.cover} />
+          <Card key={appart.id} appartId={appart.id} appartTitle={appart.title} appartCover={appart.cover} />
         ))
        }
       </div>

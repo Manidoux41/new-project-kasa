@@ -26,10 +26,12 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<Home apparts={apparts}/>} />
+        <Route index element={<Home apparts={apparts}/>} />
+        <Route path="/home" element={<Home apparts={apparts}/>} />
         <Route path="/about" element={<About />} />
-        <Route path="/lodging" element={<Lodging />} />
+        <Route path="/lodging/:logementId" element={<Lodging apparts={apparts} />} />
         <Route path="/error" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
