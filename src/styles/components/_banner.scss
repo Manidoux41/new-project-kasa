@@ -4,11 +4,15 @@
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:992px) {
         height: 223px;
         border-radius: 25px;
     }
+   img{
+    filter: brightness(50%);
+   }
     h2 {
         position: absolute;
         width: 217px;
@@ -22,7 +26,7 @@
         display: flex;
         justify-content: flex-start;
 
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:992px) {
             width: 100%;
             font-size: 48px;
             display: inline;
