@@ -6,7 +6,6 @@ function Home({apparts}) {
   const bannerTitle = 'Chez vous, partout et ailleurs'
 
   const imageIndex = 1;
-  console.log(apparts)
 
   return (
     <div className="home">
