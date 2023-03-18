@@ -1,0 +1,46 @@
+@use "../utils/" as *;
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  @media screen and (min-width: 768px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 145px;
+    height: 47px;
+    overflow: hidden;
+    @media screen and (min-width: 768px) {
+      width: 210px;
+      height: 68px;
+    }
+  }
+  nav {
+    display: flex;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      @media screen and (min-width: 768px) {
+        gap: 57px;
+      }
+      a {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $mainColor;
+        @media screen and (min-width: 768px) {
+          font-size: 24px;
+          text-transform: none;
+        }
+      }
+    }
+    .active-link {
+        text-decoration: underline;
+    }
+  }
+}

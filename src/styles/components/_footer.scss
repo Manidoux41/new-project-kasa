@@ -1,0 +1,29 @@
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:62px;
+    padding-bottom:62px;
+
+    @media screen and (min-width: 768px) {
+        padding-top:66px;
+    padding-bottom:29px;
+    }
+    .logo {
+        width: 122px;
+        height: 40px;
+    }
+    p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 69px;
+        @media screen and (min-width: 768px) {
+            font-size: 24px;            
+        }
+    }
+}

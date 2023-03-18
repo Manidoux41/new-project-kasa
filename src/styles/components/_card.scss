@@ -1,0 +1,33 @@
+@use "../utils/" as *;
+
+.card {
+  width: 100%;
+  height: 255px;
+  border-radius: 25px;
+  background: linear-gradient(#FF6060 rgba(0, 0, 0, 0.885));
+  overflow: hidden;
+  position: relative;
+  @media screen and (min-width: 767px) {
+    width: 45%;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 991px) {
+    height: 340px;
+    width: 30%;
+  }
+  .cardImg{
+    width: 100%;
+    height: 100%;
+    opacity: .95;
+    z-index: 2;
+  }
+  h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
