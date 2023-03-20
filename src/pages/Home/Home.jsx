@@ -1,11 +1,10 @@
-import { useState } from "react";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 
 function Home({apparts}) {
   const bannerTitle = 'Chez vous, partout et ailleurs'
-
   const imageIndex = 1;
+  console.log(apparts)
 
   return (
     <div className="home">

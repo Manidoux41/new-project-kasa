@@ -19,7 +19,7 @@ function App() {
         console.log("Une erreur s'est produite");
       }
     }
-    setTimeout(fetchData, 0);
+    setTimeout(fetchData, 3000);
     return () => {};
   }, [])
  
