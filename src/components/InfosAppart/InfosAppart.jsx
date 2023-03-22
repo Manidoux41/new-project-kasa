@@ -10,8 +10,8 @@ function InfosAppart({appart}) {
             <p className="location">{appart.location}</p>
             <ul className="tags">
                 {
-                    appart.tags.map((tag) => (
-                        <Tag tag={tag}/>
+                    appart.tags.map((tag, index) => (
+                        <Tag key={index} tag={tag}/>
                     ))
                 }
             </ul>
