@@ -1,4 +1,5 @@
 import React from 'react'
+import Stars from '../Stars/Stars';
 import Tag from '../Tag.jsx/Tag';
 
 function InfosAppart({appart}) {
@@ -23,9 +24,7 @@ function InfosAppart({appart}) {
                     <img src={appart.host.picture} alt={appart.host.name} />
                 </div>
             </div>
-            <div className="stars">
-                Etoiles
-            </div>
+            <Stars rating={appart.rating} />
         </div>
     </div>
   )

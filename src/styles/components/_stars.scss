@@ -1,0 +1,16 @@
+.stars {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    @media screen and (min-width:991px) {
+        align-self: flex-end;
+    }
+    img{
+        width: 15px;
+        height: 15px;
+        @media screen and (min-width:991px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
