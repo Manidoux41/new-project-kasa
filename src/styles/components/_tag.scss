@@ -1,0 +1,13 @@
+@use '../utils/' as *;
+
+.tag {
+    background: $mainColor;
+    color: #fff;
+    padding: 2px 23px 1px;
+    border-radius: 5px;
+    white-space: nowrap;
+    @media screen and (min-width:767px) {
+        padding: 3px 30px 2px;
+        border-radius:10px;
+    }
+}

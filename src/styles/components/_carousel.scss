@@ -11,6 +11,20 @@
         height: 415px;
         border-radius: 25px;
     }
+    .quantity {
+        visibility: hidden;
+        position: absolute;
+        color: #fff;
+        font-size: 18px;
+        left: 50%;
+        bottom: 25px;
+        transform: translateX(-50%);
+        z-index: 4;
+        @media screen and (min-width:767px) {
+            visibility: visible;
+        }
+
+    }
     .left-arrow,.right-arrow {
         position: absolute;
         top: 50%;
@@ -44,4 +58,5 @@
         width: 0;
         z-index: -3;
     }
+    
 }
