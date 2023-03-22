@@ -7,12 +7,16 @@
   background: linear-gradient(#FF6060 rgba(0, 0, 0, 0.885));
   overflow: hidden;
   position: relative;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 991px) {
     width: 48%;
     height: 340px;
     border-radius: 10px;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 991px) {
+    height: 340px;
+    width: 48%;
+  }
+  @media screen and (min-width: 1220px) {
     height: 340px;
     width: 340px;
   }

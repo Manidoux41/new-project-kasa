@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 991px) {
     max-width: 1240px;
     margin: 0 auto;
   }
@@ -19,7 +19,7 @@
     @media screen and (min-width: 991px) {
       gap: 30px;
     }
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 991px) {
       width: 100%;
       height: auto;
       margin: 43px 0;
