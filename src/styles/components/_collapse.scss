@@ -1,0 +1,69 @@
+@use '../utils/' as *;
+
+.accordion {
+    width: 100%;
+    margin: 0px auto;
+    @media screen and (max-width:960px) {
+        margin: 0px auto;
+    }   
+    &__header {
+        color: #fff;
+        background-color: $mainColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 18px;
+        border-radius: 8px;
+        font-size: 24px;
+        h3{
+            font-weight: 500;
+        }
+        @media screen and (max-width:960px) {
+            font-size: 13px;
+            padding: 5px 12px;
+        }       
+        img {
+            width: 23px;
+            height: 14px;
+            font-weight: 500;
+            @media screen and (max-width:960px) {
+                width: 15px;
+            height: 8px;
+            }  
+        }
+        .rotate {
+            transform: rotate(180deg);
+            transition: all .2s ease;
+        }
+    }
+    &__content {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+    &__contentDisplay {
+        font-size: 24px;
+        line-height: 36px;
+        background-color: #f6f6f6;
+        color: $mainColor;
+        border-radius: 5px;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        visibility: visible;
+        height: 80%;
+        padding: 10px 27px 15px 27px;
+        top: -45px;
+        z-index: -1;
+        @media screen and (max-width:960px) {
+            line-height: 17px;
+            font-size: 12px;            
+        } 
+        p{
+            margin: 17px 0px;
+            @media screen and (max-width:960px) {
+                margin: 17px 0px;
+            }
+        }      
+    }
+}
