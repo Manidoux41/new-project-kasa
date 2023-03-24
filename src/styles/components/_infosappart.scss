@@ -52,8 +52,7 @@
 
   .right {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    @include flexPosition;
     flex-direction: row-reverse;
     @media screen and (min-width: 992px) {
       width: 50%;
